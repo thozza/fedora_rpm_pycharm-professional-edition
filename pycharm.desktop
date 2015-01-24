@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=PyCharm Community Edition
-GenericName=PyCharm Community Edition - The intelligent Python IDE
+Name=PyCharm
+GenericName=PyCharm - The intelligent Python IDE
 Exec=pycharm
 Terminal=false
 Icon=pycharm

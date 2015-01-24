@@ -6,8 +6,8 @@
 # there are some python 2 and python 3 scripts so there is no way out to bytecompile them ^_^
 %global __os_install_post %(echo '%{__os_install_post}' | sed -e 's!/usr/lib[^[:space:]]*/brp-python-bytecompile[[:space:]].*$!!g')
 
-Name:		pycharm-community
-Version:	4.0
+Name:		pycharm-professional
+Version:	4.0.4
 Release:	1%{?dist}
 Summary:	Intelligent Python IDE
 Group:      Applications/Development
@@ -24,7 +24,7 @@ The intelligent Python IDE with unique code assistance and analysis,
 for productive Python development on all levels
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n pycharm-%{version}
 
 %install
 mkdir -p %{buildroot}%{_javadir}/%{name}
@@ -61,6 +61,9 @@ desktop-file-install                          \
 
 
 %changelog
+* Sat Jan 24 2015 Tomas Hozza <thozza@gmail.com> - 4.0.4-1
+- update to 4.0.4
+
 * Fri Nov 21 2014 Petr Hracek <phracek@redhat.com> - 4.0-1
 - new upstream version 4.0
 

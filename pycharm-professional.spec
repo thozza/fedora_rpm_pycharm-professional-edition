@@ -7,7 +7,7 @@
 %global __os_install_post %(echo '%{__os_install_post}' | sed -e 's!/usr/lib[^[:space:]]*/brp-python-bytecompile[[:space:]].*$!!g')
 
 Name:		pycharm-professional
-Version:	2016.1.4
+Version:	2017.1.4
 Release:	1%{?dist}
 Summary:	Intelligent Python IDE
 Group:      Applications/Development
@@ -61,6 +61,9 @@ desktop-file-install                          \
 
 
 %changelog
+* Sat Jun 17 2017 Tomas Hozza <thozza@gmail.com> - 2017.1.4-1
+- Update to 2017.1.4
+
 * Sun May 29 2016 Tomas Hozza <thozza@redhat.com> - 2016.1.4-1
 - Update to 2016.1.4
 
